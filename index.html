@@ -31,36 +31,75 @@
     </nav>
   </header>
   <main>
-<div id="radar">
-  <div id="circle">
-    <div id="rings">
-      <div id="ring-0"></div>
-      <div id="ring-1"></div>
-      <div id="ring-2"></div>
-      <div id="ring-3"></div>
-      <div id="ring-4"></div>
+    <div id="radar">
+      <div id="circle">
+        <div id="rings">
+          <div id="ring-0"></div>
+          <div id="ring-1"></div>
+          <div id="ring-2"></div>
+          <div id="ring-3"></div>
+          <div id="ring-4"></div>
+        </div>
+        <div id="rotator"></div>
+      </div>
+      <div id="dot"></div>
     </div>
-    <div id="rotator"></div>
-  </div>
-  <div id="dot"></div>
-</div>
     <div class="info">
-      <section><div class="number">24</div><div class="text">ACTIVE SIGNALS</div></section>
-      <section><div class="number">07</div><div class="text">PRIORITY ALERTS</div></section>
+      <section>
+        <div class="number">24</div>
+        <div class="text">ACTIVE SIGNALS</div>
+      </section>
+      <section>
+        <div class="number">07</div>
+        <div class="text">PRIORITY ALERTS</div>
+      </section>
     </div>
   </main>
   <div class="options">
     <button>⚡ New Brief</button>
-    <button><> Decode</button>
+    <button>
+      <> Decode
+    </button>
     <button>✈️ Requeste Drone</button>
   </div>
   <div class="cards">
-    <div class="card">
-      <button class="card-button">CRITICAL</button>
-      <div class="card-status">In-Progress</div>
+      <div class="card green-border">
+        <div class="card-level critical">CRITICAL</div>
+        <div class="card-status">In-Progress</div>
+        <div class="title">Operation Nightfall</div>
+        <div class="percentage">________<span class="gray">___________</span>  65%</div>
+      </div>
+      <div class="card orange-border">
+        <div class="card-level high">HIGH</div>
+        <div class="card-status">Analyzing</div>
+        <div class="title">Operation Nightfall</div>
+        <div class="percentage">________<span class="gray">___________</span>  65%</div>
+        
+      </div>
+      <div class="card green-border">
+        <div class="card-level">MEDDIUM</div>
+        <div class="card-status">Pending</div>
+        <div class="title">Operation Nightfall</div>
+        <div class="percentage">________<span class="gray">___________</span>  65%</div>
+        
+      </div>
+      <div class="card orange-border">
+        <div class="card-level high">HIGH</div>
+        <div class="card-status">Active</div>
+        <div class="title">Operation Nightfall</div>
+        <div class="percentage">________<span class="gray">___________</span>  65%</div>
     </div>
   </div>
+  <div class="alert">
+    <div class="point"></div>
+    <div class="text">THREAT DETECTED</div>
+  </div>
 </body>
-<footer>footer</footer>
+<footer>
+  <button class="active-footer-button">📈<br>Dafbus <br>___</button>
+  <button>🛜<br>Dafbus<br>___</button>
+  <button>📄<br>Dafbus<br>___</button>
+</footer>
+<button class="help">?</button>
 
 </html>
