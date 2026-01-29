@@ -82,11 +82,11 @@ nav {
 main {
   display: flex;
   padding: 1rem;
-  background-color: #140f1e;
   border: 2px solid;
   border-radius: 8px;
-  border-color: aliceblue;
-  width: 95%;
+  background-color: #140f1e;
+  border-color: rgb(40, 48, 54);
+  width: 90%;
   margin: 1rem;
   align-items: center;
   justify-content: space-between;
@@ -203,5 +203,20 @@ footer {
 }
 .info .text {
   color: rgb(182, 180, 177);
-  font-size: 0.8rem;
+  font-size: 0.6rem;
+}
+.options {
+  display: flex;
+  gap: 1rem;
+  width: 95%;
+}
+
+.options button {
+  color: aliceblue;
+  border:2px solid;
+  border-radius: 20px;
+  font-size: 1rem;
+  padding: 0.5rem;
+    background-color: #140f1e;
+  border-color: rgb(40, 48, 54);
 }
