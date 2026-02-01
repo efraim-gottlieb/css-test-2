@@ -76,7 +76,7 @@ nav {
 }
 
 #secure {
-  color: #247e39;
+  animation: boom 1.5s infinite linear;
 }
 
 main {
@@ -91,6 +91,7 @@ main {
   align-items: center;
   justify-content: space-between;
 }
+
 footer {
   height: 4rem;
   width: 100%;
@@ -103,9 +104,11 @@ footer button {
   border: none;
   color: #8b938d;
 }
+
 .active-footer-button {
   color: #00dc36;
 }
+
 .help {
   position: absolute;
   transform: translate(48vw, 95vh);
@@ -141,6 +144,7 @@ footer button {
     linear-gradient(to bottom, rgb(var(--bright-green)) 1px, transparent 1px);
   opacity: 0.5;
 }
+
 #circle {
   pointer-events: none;
   height: 100%;
@@ -258,7 +262,9 @@ footer button {
   border-color: #444644;
   border-radius: 10px;
   padding: 1.2rem;
+  transition: transform 0.3s ease;
 }
+
 .title {
   color: #acaeac;
 }
@@ -321,20 +327,38 @@ main:hover {
 }
 
 .logo:hover {
-  animation:   rotate  1s
+  animation: rotate-50 1s linear;
 }
 
+.card:hover {
+  border-color: #00dc36;
+  transform: rotate(6deg) scale(1.05);
+}
 .gray {
   color: #444644;
 }
-@keyframes rotate {
-  100% {
-    transform: rotate(180deg);
 
-  }
-}
 @keyframes pulse {
   50% {
     transform: scale(1.2);
+  }
+}
+
+@keyframes boom {
+  50% {
+    color: #022d16;
+  }
+}
+
+@keyframes rotate-50 {
+  50% {
+    transition: transform 0.3s ease;
+    transform: rotate(180deg);
+  }
+}
+
+@keyframes rotate-little {
+  50% {
+    transform: rotate(20deg);
   }
 }
